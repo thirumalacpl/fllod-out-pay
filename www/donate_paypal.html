@@ -46,6 +46,8 @@ function myFunctiona() {
 
 
         <div class="container">
+          <div style="text-align:center;font-size:30px;background-color: #81B92C;color: white;"><b>pay with card</b></div>
+          <br>
         <form action="https://www.paypal.com/cgi-bin/webscr" data-ajax="false" method="post" target="_blank" >
  
     <input type="hidden" name="cmd" value="_xclick">
@@ -69,7 +71,7 @@ function myFunctiona() {
     <input type="hidden" name="return" value="https://www.paypal.com">
  
     <br /><br />
-    <input type="submit" value="Pay with PayPal!" onclick="myFunction()" style="background-color:#161715">
+    <input type="submit" value="Pay with PayPal!" onclick="myFunction()" style="background-color:#81B92C;color:white">
  
 </form>
 <br>
@@ -81,7 +83,11 @@ function myFunctiona() {
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
 </form> -->
 
-
+  <div style="text-align:center;font-size:30px;background-color: #81B92C;color: white;"><b>pay with paypal</b></div>
+<br>
+  <div style="font-size:20px;background-color: #81B92C;color: white;"><b>step 1: first login with paypal Account</b></div>
+<br>
+<div style="text-align:center;">
 <span id="lippButton"></span>
 <script src="https://www.paypalobjects.com/js/external/api.js"></script>
 <script>
@@ -96,9 +102,11 @@ paypal.use( ["login"], function(login) {
   });
 });
 </script>
-
+</div>
 
 <br>
+<br>
+  <div style="font-size:20px;background-color: #81B92C;color: white;"><b>step 2:Enter amount to pay</b></div>
 <br>
 
 <form action="https://www.paypal.com/cgi-bin/webscr" data-ajax="false" method="post" target="_blank" >
@@ -124,7 +132,7 @@ paypal.use( ["login"], function(login) {
     <input type="hidden" name="return" value="https://www.paypal.com">
  
     <br /><br />
-    <input type="submit" value="Pay with PayPal!" onclick="myFunctiona()" style="background-color:#161715">
+    <input type="submit" value="Pay with PayPal!" onclick="myFunctiona()" style="background-color:#81B92C;color:white">
  
 </form>
 
