@@ -24,6 +24,13 @@
         <script type="text/javascript">
 //var ref = cordova.InAppBrowser.open('http://phonegappro.com', '_blank', 'location=yes');
         </script>
+        <script>
+function myFunctiona() {
+    //alert("Hello! I am an alert box!");
+    document.getElementById('payamountemptya').value = "1";
+    
+}
+</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -76,7 +83,7 @@ paypal.use( ["login"], function(login) {
 <br>
  
     <strong>How much do you want to donate?</strong><br />
-    $ <input type="number" name="amount" style="background-color:#E8E8E8;color:black">
+    $ <input type="number" name="amount" id="payamountemptya" style="background-color:#E8E8E8;color:black">
  
     <input type="hidden" name="no_shipping" value="0">
     <input type="hidden" name="no_note" value="1">
@@ -86,7 +93,7 @@ paypal.use( ["login"], function(login) {
     <input type="hidden" name="return" value="https://www.paypal.com">
  
     <br /><br />
-    <input type="submit" value="Pay with PayPal!" style="background-color:#161715">
+    <input type="submit" value="Pay with PayPal!" onclick="myFunctiona()" style="background-color:#161715">
  
 </form>
 
