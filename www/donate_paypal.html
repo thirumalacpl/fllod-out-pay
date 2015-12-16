@@ -26,14 +26,20 @@
         </script>
         <script>
         function myFunction() {
-    //alert("Hello! I am an alert box!");
+            payamountempty=document.getElementById('payamountempty').value;
+    if(payamountempty == ''){
     document.getElementById('payamountempty').value = "1";
-    
+    }else{
+
+    }
 }
 function myFunctiona() {
-    //alert("Hello! I am an alert box!");
+       payamountemptya=document.getElementById('payamountemptya').value;
+      if(payamountemptya == ''){
     document.getElementById('payamountemptya').value = "1";
-    
+    }else{   
+    }
+ 
 }
 </script>
     </head>
@@ -52,11 +58,11 @@ function myFunctiona() {
  
     <input type="hidden" name="cmd" value="_xclick">
     <input type="hidden" name="business" value="naren@advicesync-consulting.com">
-    <strong>Donation / Contribution? </strong><br />
+<!--     <strong>Donation / Contribution? </strong><br />
     <select name="item_name">
       <option value="Donation">Donation</option>
       <option value="Contribution">Contribution</option>
-    </select>
+    </select> -->
  
 <br>
  
@@ -113,11 +119,11 @@ paypal.use( ["login"], function(login) {
  
     <input type="hidden" name="cmd" value="_xclick">
     <input type="hidden" name="business" value="naren@advicesync-consulting.com">
-    <strong>Donation / Contribution? </strong><br />
+<!--     <strong>Donation / Contribution? </strong><br />
     <select name="item_name">
       <option value="Donation">Donation</option>
       <option value="Contribution">Contribution</option>
-    </select>
+    </select> -->
  
 <br>
  
