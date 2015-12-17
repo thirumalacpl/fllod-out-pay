@@ -97,7 +97,7 @@ function myFunctiona() {
   <strong>First Login With Your Paypal Account:</strong>
 <br>
 <br>
-<div style="text-align:center;">
+<div style="text-align:center;" class="showdiv">
 <span id="lippButton"></span>
 <script src="https://www.paypalobjects.com/js/external/api.js"></script>
 <script>
@@ -116,6 +116,7 @@ paypal.use( ["login"], function(login) {
 
 <br>
 <br>
+<div class="hideshow">
 <span style="font-size:20px;background-color: #81B92C;color: white;"><b>step 2: </b></span>
 <!--   <div style="font-size:20px;background-color: #81B92C;color: white;"><b>step 2:Enter amount to pay</b></div> -->
 <br>
@@ -147,7 +148,7 @@ paypal.use( ["login"], function(login) {
    <div style="text-align:center"> <input type="submit" value="Submit" onclick="myFunctiona()" style="background-color:#81B92C;color:white;padding: 10px;border-radius: 25px;"></div>
  
 </form>
-
+</div>
 <!-- <form action="/charge" method="POST">
   <script
     src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -239,6 +240,13 @@ paypal.use( ["login"], function(login) {
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+
+                        $(document).ready(function(){
+     $(".hideshow").hide();
+    $(".showdiv").click(function(){
+        $(".hideshow").show();
+        });
+});
         </script>
     </body>
 </html>
